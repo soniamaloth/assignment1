@@ -72,3 +72,22 @@ Overfitting can be detected if training accuracy increases while validation accu
 
 3. What happens if the number of epochs increases?
 The model may begin to overfit the training data unless regularization is applied. TensorBoard would show training loss decreasing while validation loss increases.
+
+How to Run
+# 1. Clone the Repository
+git clone <your-repo-url>
+cd home_assignment_1
+
+# 2. Install Dependencies
+pip install -r requirements.txt
+
+# 3. Run the Python Scripts
+python tensor_ops.py
+python loss_functions.py
+python mnist_tensorboard.py
+
+# 4. Launch TensorBoard
+tensorboard --logdir=logs/fit
+
+# After launching, open your browser and go to:
+# http://localhost:6006
